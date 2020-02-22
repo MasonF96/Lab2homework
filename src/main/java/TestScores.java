@@ -27,9 +27,24 @@ public class TestScores {
 
         //Calculate average
         double testaverage =(testscore1 + testscore2 + testscore3)/3;
+        System.out.println("You test average is " + testaverage);
 
         //calculate which letter grade 
-        
-        //output average and letter grade to user
+      
+        if (testaverage <= 100 && testaverage >= 90){
+             System.out.print("A");
+        }
+         if (testaverage <= 89 && testaverage >= 80){
+             System.out.print("B");
+        }
+         if (testaverage <= 79 && testaverage >= 70){
+             System.out.print("C");
+        }
+         if (testaverage <= 69 && testaverage >= 60){
+             System.out.print("D");
+        }
+         if (testaverage <= 59 && testaverage >= 0){
+             System.out.print("F");
+        }
     }
 }
