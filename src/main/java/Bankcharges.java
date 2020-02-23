@@ -22,24 +22,19 @@ public class Bankcharges {
 
         int numberofchecks = keyboard.nextInt();
         double totalmonthlycharges;
-        
-        if (numberofchecks <= 20){
+
+        if (numberofchecks <= 20) {
             totalmonthlycharges = (numberofchecks * 0.1) + 10;
             System.out.println("Your monthly charges for " + numberofchecks + " checks is, " + totalmonthlycharges);
-        } 
-        else if (numberofchecks >= 21 && numberofchecks >= 39){
-            totalmonthlycharges = (numberofchecks * 0.8)+ 10;
+        } else if (numberofchecks >= 21 && numberofchecks >= 39) {
+            totalmonthlycharges = (numberofchecks * 0.8) + 10;
             System.out.println("Your monthly charges for " + numberofchecks + " checks is, " + totalmonthlycharges);
-        }
-        else if (numberofchecks >= 40 && numberofchecks >= 59){
+        } else if (numberofchecks >= 40 && numberofchecks >= 59) {
             totalmonthlycharges = (numberofchecks * 0.06) + 10;
             System.out.println("Your monthly charges for " + numberofchecks + " checks is, " + totalmonthlycharges);
-        } 
-        else if (numberofchecks >= 60){
+        } else if (numberofchecks >= 60) {
             totalmonthlycharges = (numberofchecks * 0.04);
             System.out.println("Your monthly charges for " + numberofchecks + " checks is, " + totalmonthlycharges);
-
-        
-    
-    } 
+        }
+        }
     }
